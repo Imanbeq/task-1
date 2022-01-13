@@ -1,7 +1,7 @@
 /******** 1-способ использования атрибута html ********/
-const showMessage = () => {
-    alert('hello');
-}
+// const showMessage = () => {
+//     alert('hello');
+// }
 
 /******** 2-способ использования свойства DOM - обьекта ********/
 // const btn1 = document.querySelector('#btn1');
@@ -30,8 +30,19 @@ const showMessage = () => {
 // })
 //
 
-const btn1 = document.querySelector('#btn1');
 
-btn1.addEventListener('click', () => {
 
+let i = 0;
+
+btn1.addEventListener('click', ()=>{
+    i++;
+})
+
+btn2.addEventListener('click', ()=>{
+    i--;
+})
+
+btn3.addEventListener('click', ()=>{
+    alert(i);
 });
+
